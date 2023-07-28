@@ -33,10 +33,11 @@
                         <td>
                             {{ $schedule->pic_name }} {{ $schedule->pic_contact_number }}
                         </td>
+                        <td>{{$schedule->status}}</td>
                         <td>
-                            <a href="{{ route('schedule.edit', ['schedule' => $schedule->student_id]) }}"
+                            <a href="{{ route('schedule.edit', ['schedule' => $schedule->id]) }}"
                                 class="btn btn-warning">Edit</a>
-                            <form method="POST" action="{{ route('schedule.destroy', $schedule->student_id) }}"
+                            <form method="POST" action="{{ route('schedule.destroy', $schedule->id) }}"
                                 style="display:inline">
                                 @method('DELETE')
                                 @csrf

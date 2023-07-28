@@ -21,7 +21,7 @@
         </div>
         <label for="event_date_time">Event Date & Time</label>
         <div class="input-group mb-3">
-            <input type="date" name="event_date_time" class="form-control @error('event_date_time') is-invalid @enderror" placeholder="Event Title (e.g. National Seminary)"
+            <input type="datetime-local" name="event_date_time" class="form-control @error('event_date_time') is-invalid @enderror" placeholder="Event Title (e.g. National Seminary)"
                 autofocus>
 
             @error('event_date_time')

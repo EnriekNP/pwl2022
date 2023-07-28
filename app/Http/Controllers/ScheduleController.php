@@ -71,7 +71,7 @@ class ScheduleController extends Controller
             'pic_name'=>$request->pic,
             'pic_contact_number'=>$request->number_telp
         ]);
-        return route('schedule.index');
+        return view(route('schedule.index'));
     }
 
     /**

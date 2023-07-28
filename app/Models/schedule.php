@@ -18,5 +18,7 @@ class schedule extends Model
         'pic_name',
         'pic_contact_number'
     ];
-
+    protected $casts = [
+        'start_date_time' => 'timestamp'
+    ];
 }
